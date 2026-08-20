@@ -31,3 +31,13 @@ h3 {
     color: var(--highlight-color);
 }
 
+/* navbar */
+
+#navbar {
+    background-color: var(--primary-color);
+}
+
+#navbar .logo {
+    width: 50px;
+}
+
