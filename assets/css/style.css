@@ -1,12 +1,33 @@
 /* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Oswald:wght@200..700&display=swap');
 
+:root {
+    --primary-font: "Inter", sans-serif;
+    --secondary-font: "Oswald", sans-serif;
+
+    /* Modern Gym Palette */
+    --primary-color: #0b2124; /* Dark Jungle Green - header/footer background */
+    --secondary-color: #3b4f4e; /* Outer Space - section dividers/hero overlay */
+    --highlight-color: #6e7773; /* Nickel - buttons and accents */
+    --highlight-color-light: #c1c2bd; /* Argent - light section background */
+    --neutral-color: #dbd6d8; /* Light Silver - page background */
+    --text-color: #989f9b; /* Spanish Grey - paragraph text */
+}
+
+/* Global styles */
+
 body {
-    font-family: "Inter" sans-serif;
+    font-family: var(--primary-font);
 }
 
 h1,
 h2,
 h3 {
-    font-family: "Oswald" sans-serif;
+    font-family: var(--secondary-font);
+    color: var(--text-color);
 }
+
+.sub-heading-color {
+    color: var(--highlight-color);
+}
+
