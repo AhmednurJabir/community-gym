@@ -21,83 +21,88 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 
-<body>
-    <!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
+<!-- Classes on body set to work with mt-auto on footer to ensure it always stays at the bottom of the page -->
 
-    <body class="d-flex flex-column min-vh-100">
-        <!-- Navigation -->
-        <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/images/gym-logo-v2.png" alt="Community Gym logo" class="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="classes.html">Classes</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
+<body class="d-flex flex-column min-vh-100">
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/images/gym-logo-v2.png" alt="Community Gym logo" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="classes.html">Classes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- Header with carousel -->
-        <header class="container">
+    <!-- Header with hero image -->
+    <header id="header" class="container section">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-3">Community Gym</h1>
+                <p class="lead display-6 sub-heading-color">Your next transformation starts here!</p>
+                <p class="my-4">Welcome to Community Gym, Your Local Fitness Hub! Step into a space built for progress, energy, and
+                    community. Whether you're a beginner taking your first step toward a healthier lifestyle, a regular
+                    gym-goer chasing your next personal best, or a student looking for an affordable place to stay
+                    active, we've got you covered.</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- main element to hold all key sections of the home page. It is not part of the grid structure -->
+    <main>
+        <!-- Services section -->
+        <section class="container">
             <div class="row">
-                <div class="col-12 col-xl-6">Community Gym intro text section</div>
-                <div class="col-12 col-xl-6">Carousel</div>
+                <div class="col-12">Services section heading</div>
+                <div class="col-12 col-md-6 col-xl-3">Services card</div>
+                <div class="col-12 col-md-6 col-xl-3">Services card</div>
+                <div class="col-12 col-md-6 col-xl-3">Services card</div>
+                <div class="col-12 col-md-6 col-xl-3">Services card</div>
             </div>
-        </header>
+        </section>
+    </main>
 
-        <!-- main element to hold all key sections of the home page. It is not part of the grid structure -->
-        <main>
-            <!-- Services section -->
-            <section class="container">
-                <div class="row">
-                    <div class="col-12">Services section heading</div>
-                    <div class="col-12 col-md-6 col-xl-3">Services card</div>
-                    <div class="col-12 col-md-6 col-xl-3">Services card</div>
-                    <div class="col-12 col-md-6 col-xl-3">Services card</div>
-                    <div class="col-12 col-md-6 col-xl-3">Services card</div>
-                </div>
-            </section>
-        </main>
-
-        <!-- Footer / contact section -->
-        <!-- mt-auto added to push footer to the bottom of the page -->
-        <footer class="mt-auto">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-12">Contact section heading</div>
-                    <!-- Contact info -->
-                    <div class="col-12 col-md-6 col-xl-4">Contact info & social links</div>
-                    <!-- Opening times -->
-                    <div class="col-12 col-md-6 col-xl-4">Opening times</div>
-                </div>
+    <!-- Footer / contact section -->
+    <!-- mt-auto added to push footer to the bottom of the page -->
+    <footer class="mt-auto">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">Contact section heading</div>
+                <!-- Contact info -->
+                <div class="col-12 col-md-6 col-xl-4">Contact info & social links</div>
+                <!-- Opening times -->
+                <div class="col-12 col-md-6 col-xl-4">Opening times</div>
             </div>
-        </footer>
+        </div>
+    </footer>
 
 
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-            crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 
-        <!-- Font Awesome Kit -->
-        <script src="https://kit.fontawesome.com/038bbd5b15.js" crossorigin="anonymous"></script>
-    </body>
+    <!-- Font Awesome Kit -->
+    <script src="https://kit.fontawesome.com/038bbd5b15.js" crossorigin="anonymous"></script>
+</body>
 
 </html>

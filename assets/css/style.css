@@ -11,7 +11,8 @@
     --highlight-color: #6e7773; /* Nickel - buttons and accents */
     --highlight-color-light: #c1c2bd; /* Argent - light section background */
     --neutral-color: #dbd6d8; /* Light Silver - page background */
-    --text-color: #989f9b; /* Spanish Grey - paragraph text */
+    --text-color-dark-bg: #989f9b; /* Spanish Grey - text on dark backgrounds (navbar/footer) */
+    --text-color-light-bg: #3b4f4e; /* Outer Space - text on light backgrounds (body copy) */
 }
 
 /* Global styles */
@@ -24,11 +25,17 @@ h1,
 h2,
 h3 {
     font-family: var(--secondary-font);
-    color: var(--text-color);
+    color: var(--text-color-light-bg);
+    text-transform: uppercase;
 }
 
 .sub-heading-color {
     color: var(--highlight-color);
+}
+
+.section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 
 /* navbar */
@@ -41,3 +48,8 @@ h3 {
     width: 50px;
 }
 
+/* header */
+
+#header .lead {
+    font-family: var(--secondary-font);
+}
