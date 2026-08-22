@@ -53,3 +53,10 @@ h3 {
 #header .lead {
     font-family: var(--secondary-font);
 }
+
+.hero-image {
+    width: 100%;
+    max-height: 40vh;
+    object-fit: cover;
+    object-position: right center;
+}
