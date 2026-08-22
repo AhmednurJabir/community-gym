@@ -25,13 +25,49 @@
 
     <body class="d-flex flex-column min-vh-100">
         <!-- Navigation -->
-        <div>Navigation</div>
+        <nav id="navbar" class="navbar navbar-expand-lg" data-bs-theme="dark">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/gym-logo-v2.png" alt="Community Gym logo" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="classes.html">Classes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
         <!-- Header -->
-        <header class="container">
+        <header id="header" class="container section">
             <div class="row">
-                <div class="col-12 col-xl-6">Community Gym intro text section</div>
-                <div class="col-12 col-xl-6">Carousel</div>
+                <div class="col-12">
+                    <img src="assets/images/gym-hero-img-2.png"
+                        alt="Gym members participating in a group fitness class using step platforms"
+                        class="img-fluid hero-image">
+                </div>
+                <div class="col-12 text-center">
+                    <h1 class="display-3">Our Classes</h1>
+                    <p class="lead display-6 sub-heading-color">Find the perfect class to power your fitness journey</p>
+                    <p class="my-4">From heart-pumping HIIT sessions to calming yoga flows, our expert-led classes are
+                        designed to challenge, motivate, and support you at every stage. Whether you're chasing
+                        strength, flexibility, or stress relief, there's a class here with your name on it.</p>
+                </div>
             </div>
         </header>
 
