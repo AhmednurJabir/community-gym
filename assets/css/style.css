@@ -81,6 +81,19 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
+/* classes */
+
+#pop-classes .card,
+#more-classes .card {
+    border: none;
+}
+
+#pop-classes .card-footer,
+#more-classes .card-footer {
+    background-color: transparent;
+    border-top: none;
+}
+
 /* media queries */
 
 /* Medium devices (tablets, 768px and up) */
