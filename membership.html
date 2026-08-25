@@ -46,7 +46,7 @@
                         <a class="nav-link" href="classes.html">Classes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="membership.html">Membership</a>
+                        <a class="nav-link active" aria-current="page" href="membership.html">Membership</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="index.html#contact">Contact</a>
@@ -59,63 +59,51 @@
         </div>
     </nav>
 
-    <!-- header section -->
-    <header id="header" class="container section">
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-8 text-center text-xl-start">
-                <h1 class="display-3">Community Gym</h1>
-                <p class="my-4">
-                    Thank you for choosing to book a class at Community Gym! Please fill out
-                    the form below with your details and preferred class. A member of our
-                    team will confirm your booking and get back to you as soon as possible.
-                </p>
-            </div>
-        </div>
-    </header>
-
     <main>
-        <!-- Booking inquiry form section -->
-        <section id="booking-form" class="container section">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-8">
-                    <h2>Booking inquiry</h2>
-                    <form action="success.html" method="get">
-                        <div class="row">
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="name" class="form-label">Name</label>
-                                <input class="form-control" id="name" name="name" type="text" required>
-                            </div>
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <input class="form-control" id="email" name="email" type="email" required>
-                            </div>
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="phone" class="form-label">Phone number</label>
-                                <input class="form-control" id="phone" name="phone" type="number" required>
-                            </div>
-                            <div class="col-12 col-lg-6 mb-3">
-                                <label for="class-type" class="form-label">Class type</label>
-                                <select id="class-type" class="form-select" name="class-type" required>
-                                    <option value="" selected>Select</option>
-                                    <option value="hiit">HIIT</option>
-                                    <option value="yoga">Yoga</option>
-                                    <option value="spin">Spin</option>
-                                    <option value="bootcamp">Strength Bootcamp</option>
-                                    <option value="pilates">Pilates</option>
-                                    <option value="zumba">Zumba</option>
-                                    <option value="boxing">Boxing</option>
-                                    <option value="circuit">Circuit Training</option>
-                                    <option value="personal-training">Personal Training Session</option>
-                                </select>
-                            </div>
-                            <div class="col-12 mb-3">
-                                <label for="message" class="form-label">Message</label>
-                                <textarea class="form-control" rows="6" id="message" name="message" required></textarea>
-                            </div>
+        <!-- Membership tiers section -->
+        <section id="pricing" class="container section">
+            <div class="row">
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title sub-heading-color">Basic</h2>
+                            <p class="display-6">£20<span class="fs-6">/month</span></p>
+                            <p class="card-text">
+                                Full access to our gym floor and equipment, whenever you
+                                need it.
+                            </p>
                         </div>
-
-                        <button type="submit" class="btn btn-cta">Submit</button>
-                    </form>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title sub-heading-color">Standard</h2>
+                            <p class="display-6">£40<span class="fs-6">/month</span></p>
+                            <p class="card-text">
+                                Everything in Basic, plus unlimited access to all group
+                                classes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h2 class="card-title sub-heading-color">Premium</h2>
+                            <p class="display-6">£60<span class="fs-6">/month</span></p>
+                            <p class="card-text">
+                                Everything in Standard, plus unlimited personal training
+                                sessions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 text-center">
+                    <p class="sub-heading-color mb-3">
+                        <em> save 20% on any membership with a valid student ID.</em>
+                    </p>
+                    <a href="" class="btn btn-cta">Sign Up</a>
                 </div>
             </div>
         </section>
