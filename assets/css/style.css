@@ -56,6 +56,7 @@ h2 {
 
 .btn-cta:hover {
     background-color: var(--button-hover-color);
+    color: white;
 }
 
 /* navbar */
@@ -107,7 +108,11 @@ h2 {
     border-top: none;
 }
 
+/* membership */
 
+#memberships .card {
+    border: none;
+}
 
 /* footer / contact */
 
