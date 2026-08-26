@@ -383,6 +383,32 @@
 
     <!-- Font Awesome Kit -->
     <script src="https://kit.fontawesome.com/038bbd5b15.js" crossorigin="anonymous"></script>
+
+    <!-- JavaScript code to ensure the Bootstrap mobile navbar collapses when navigating to in-page links -->
+    <script>
+        document
+            .querySelectorAll(".navbar-collapse .nav-link")
+            .forEach((link) => {
+                link.addEventListener("click", function (e) {
+                    let href = e.target.getAttribute("href");
+                    let hashIndex = href.indexOf("#");
+
+                    if (hashIndex !== -1) {
+                        let sectionId = href.substring(hashIndex);
+                        let section = document.querySelector(sectionId);
+
+                        if (section) {
+                            e.preventDefault();
+                            section.scrollIntoView({ behavior: "smooth" });
+
+                            let navbarCollapseEl = document.querySelector(".navbar-collapse");
+                            let bsCollapse = bootstrap.Collapse.getOrCreateInstance(navbarCollapseEl);
+                            bsCollapse.hide();
+                        }
+                    }
+                });
+            });
+    </script>
 </body>
 
 </html>
