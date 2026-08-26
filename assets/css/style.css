@@ -6,15 +6,24 @@
     --secondary-font: "Oswald", sans-serif;
 
     /* Modern Gym Palette */
-    --primary-color: #0b2124; /* Dark Jungle Green - header/footer background */
-    --secondary-color: #3b4f4e; /* Outer Space - section dividers/hero overlay */
-    --highlight-color: #6e7773; /* Nickel */
-    --highlight-color-light: #c1c2bd; /* Argent - light section background */
-    --neutral-color: #dbd6d8; /* Light Silver - page background */
-    --text-color-dark-bg: #989f9b; /* Spanish Grey - text on dark backgrounds (navbar/footer) */
-    --text-color-light-bg: #3b4f4e; /* Outer Space - text on light backgrounds (body copy) */
-    --button-color: #ff8c1a; /* Deep Saffron - all buttons on the site */
-    --button-hover-color: #e67a0f; /* Burnt Orange - button hover state */
+    --primary-color: #0b2124;
+    /* Dark Jungle Green - header/footer background */
+    --secondary-color: #3b4f4e;
+    /* Outer Space - section dividers/hero overlay */
+    --highlight-color: #6e7773;
+    /* Nickel */
+    --highlight-color-light: #c1c2bd;
+    /* Argent - light section background */
+    --neutral-color: #dbd6d8;
+    /* Light Silver - page background */
+    --text-color-dark-bg: #989f9b;
+    /* Spanish Grey - text on dark backgrounds (navbar/footer) */
+    --text-color-light-bg: #3b4f4e;
+    /* Outer Space - text on light backgrounds (body copy) */
+    --button-color: #ff8c1a;
+    /* Deep Saffron - all buttons on the site */
+    --button-hover-color: #e67a0f;
+    /* Burnt Orange - button hover state */
 }
 
 /* Global styles */
@@ -48,7 +57,8 @@ header {
 }
 
 .section {
-    padding-top: 76px; /* stops navbar overlap */
+    padding-top: 76px;
+    /* stops navbar overlap */
     padding-bottom: 1rem;
 }
 
@@ -88,7 +98,9 @@ header {
 .hero-image {
     width: 100%;
     max-height: 40vh;
+    -o-object-fit: cover;
     object-fit: cover;
+    -o-object-position: right center;
     object-position: right center;
 }
 
@@ -128,7 +140,7 @@ header {
 #contact {
     background-color: var(--primary-color);
     color: white;
-    
+
 }
 
 #contact h2 {
@@ -148,6 +160,7 @@ header {
 #contact .social-links i {
     color: var(--highlight-color-light);
     font-size: 2rem;
+    -webkit-transition: color 0.3s ease-in-out;
     transition: color 0.3s ease-in-out;
 }
 
@@ -163,6 +176,7 @@ header {
 
 /* Medium devices (tablets, 768px and up) */
 @media screen and (min-width: 768px) {
+
     /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: 191px;
@@ -171,6 +185,7 @@ header {
 
 /* Large devices (small laptops, 992px and up) */
 @media screen and (min-width: 992px) {
+
     /* Make all service cards the same height for consistency */
     #services .card-body {
         min-height: auto;
@@ -179,6 +194,7 @@ header {
 
 /* xl devices (large desktops, 1200px and up) */
 @media screen and (min-width: 1200px) {
+
     /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 220px;
@@ -187,6 +203,7 @@ header {
 
 /* xxl devices (larger desktops, 1400px and up) */
 @media screen and (min-width: 1400px) {
+
     /* make all service cards the same height for consistency */
     #services .card-body {
         min-height: 205px;
